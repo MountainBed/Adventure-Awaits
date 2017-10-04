@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = (sequelize, DataTypes) => {
-  const Page = sequelize.define('story_table', {
+  const Page = sequelize.define('page_table', {
     page_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -17,16 +17,28 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     page_choice1: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    page_choice_text1: {
       type: DataTypes.STRING,
       allowNull: false
     },
     page_choice2: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    page_choice_text2: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     page_choice3: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    page_choice_text3: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: false
     },
     page_status: {
       type: DataTypes.BOOLEAN,
@@ -40,6 +52,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DATE,
       allowNull: false
     },
+    page_parent_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
     id_story: {
       type: DataTypes.INTEGER,
       allowNull: false
@@ -50,7 +66,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  Page.associate = function(modles) {
+  Page.associate = function(models) {
     Page.belongsTo(models.Story, {
       foreighnKey: {
         allowNull: false
