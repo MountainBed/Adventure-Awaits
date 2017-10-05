@@ -1,0 +1,60 @@
+ /* Styles for Project 2*/
+
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "Arial", sans-serif;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+/*Styles for index*/
+  button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  }
+
+  .instruct {
+    color: #361E1C;
+    font-weight: bold;
+    width: 400px;
+    margin-left: 470px;
+    margin-top:10px;
+  }
+
+  #scifi {
+    margin-left: 270px;
+  }
+
+ #mystery {
+ }
+
+  h4 {
+  	text-align: center;
+  	color: #1b5e20;
+  	font-family: 'Chewy', cursive;
+  	font-size: 50px;
+    margin-left: 120px;
+    margin-top: 15px;
+  }
+
+  /*Styles for form & story*/
+  .class {
+    font-family: 
+  }
+
+  footer {
+  	text-align: center;
+  }
