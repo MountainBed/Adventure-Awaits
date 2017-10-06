@@ -1,7 +1,7 @@
 'use strict'
 
-module.exports = (sequelize, DataTypes) => {
-  const Page = sequelize.define('page_table', {
+module.exports = function(sequelize, DataTypes) {
+  const Page = sequelize.define('Page', {
     page_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -18,7 +18,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     page_choice1: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      defaultValue: 0
     },
     page_choice_text1: {
       type: DataTypes.STRING,
@@ -26,31 +27,26 @@ module.exports = (sequelize, DataTypes) => {
     },
     page_choice2: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      defaultValue: 0
     },
     page_choice_text2: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     page_choice3: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      defaultValue: 0
     },
     page_choice_text3: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     page_status: {
       type: DataTypes.BOOLEAN,
-      allowNull: false
-    },
-    page_date: {
-      type: DataTypes.DATE,
-      allowNull: false
-    },
-    page_update: {
-      type: DataTypes.DATE,
-      allowNull: false
+      allowNull: false,
+      defaultValue: 1
     },
     page_parent_id: {
       type: DataTypes.INTEGER,
@@ -62,17 +58,20 @@ module.exports = (sequelize, DataTypes) => {
     },
     id_user: {
       type: DataTypes.INTEGER,
-      allowNull: false
-    },
+      allowNull: false,
+      defaultValue: 0
+    }
+  }, {
+    classMethods: {
+      associate: function(models) {
+        Page.belongsTo(models.Story, {
+          foreignKey: {
+            allowNull: false
+          }
+        });
+      }
+    }
   });
 
-  Page.associate = function(models) {
-    Page.belongsTo(models.Story, {
-      foreighnKey: {
-        allowNull: false
-      }
-    });
-  };
-
-  return Story;
+  return Page;
 };
