@@ -15,7 +15,6 @@ module.exports = function (app) {
   });
 
   app.get("/api/pages/:id", function (req, res) {
-
     db.Page.findOne({
       where: {
         page_id: req.params.id

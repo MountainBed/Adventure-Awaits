@@ -52,7 +52,7 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    id_story: {
+    story_id: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
@@ -65,7 +65,7 @@ module.exports = function (sequelize, DataTypes) {
 
   Page.associate = function (models) {
     Page.belongsTo(models.Story, {
-      foreignKey: "id_story"
+      foreignKey: "story_id"
     });
   };
 
