@@ -1,7 +1,7 @@
 //Scripts for HTML files
 
 //Initialize character counter
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('input#input_text, textarea#textarea1').characterCounter();
 
     $("#SciFi").click(function(){
@@ -25,3 +25,4 @@ $(document).ready(function() {
 var today = new Date();
 document.getElementById("date").textContent = today.getFullYear();
 
+*/

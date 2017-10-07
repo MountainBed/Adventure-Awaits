@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/MountainBed/Project2#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.1",
     "express-handlebars": "^3.0.0",
     "materialize-css": "^0.100.2"
