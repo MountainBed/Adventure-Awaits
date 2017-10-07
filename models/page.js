@@ -1,15 +1,11 @@
 "use strict";
 
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   var Page = sequelize.define("Page", {
     page_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
-      allowNull: false
-    },
-    page_title: {
-      type: DataTypes.STRING,
       allowNull: false
     },
     page_text: {
@@ -56,14 +52,14 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    id_user: {
+    user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0
     }
   });
 
-  Page.associate = function (models) {
+  Page.associate = function(models) {
     Page.belongsTo(models.Story, {
       foreignKey: "story_id"
     });
