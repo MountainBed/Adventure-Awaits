@@ -71,97 +71,97 @@ h4 {
  }
 
  /*SciFi Styles*/
- body {
+#Sci-Fi {
      background-image: url("../images/backgroundSciFi.jpg");
  }
 
- h4.science {
+#Sci-Fi h4 .science {
      font-family: "Audiowide", cursive;
  }
 
- .science {
+#Sci-Fi .science {
      color: #fff;
  }
 
- button.science {
+#Sci-Fi button .science {
      background: #1a237e;
      color: #fff;
  }
 
  /*Vampire Styles*/
- body {
+#vampire .vampire-body {
      background-image: url("../images/backgroundVampire.jpg");
  }
 
- h4.vampire {
+#vampire h4 .vampire {
      font-family: "Nosifer", cursive;
      color: black;
  }
 
- .vampire {
+#vampire .vampire {
      color: #fff;
  }
 
- button.vampire {
+#vampire button .vampire {
      background: black;
      color: #fff;
  }
 
- button.vampire:hover {
+#vampire button .vampire:hover {
      background: white;
      color: black;
      font-weight: bold;
  }
 
  /*Adventure Styles*/
- body {
+#adv body {
      background-image: url("../images/backgroundAdv.jpg");
  }
 
- h4.adv {
+#adv h4.adv {
      font-family: "Titan One", cursive;
      color: #4a148c;
  }
 
- .adv {
+#adv .adv {
      color: #451D3F;
  }
 
- button.adv {
+#adv button .adv {
      background: #4a148c;
      color: #fff;
  }
 
- button.adv:hover {
+#adv button.adv:hover {
      background: white;
      color: #4a148c;
      font-weight: bold;
  }
 
  /*Mystery Styles*/
- body {
+#mystery body {
      background-image: url("../images/backgroundMystery.jpg");
  }
 
- h4.mystery {
+#mystery h4 .mystery {
      font-family: "Averia Libre", cursive;
      color: #fff;
  }
 
- .mystery {
+#mystery .mystery {
      color: #fff;
  }
 
- .choice {
+#mystery .choice {
      color: #fff;
  }
 
- button.mystery {
+#mystery button .mystery {
      background: #fff;
      color: #000;
  }
 
- button.mystery:hover {
+#mystery button.mystery:hover {
      background: #000;
      color: #fff;
      font-weight: bold;

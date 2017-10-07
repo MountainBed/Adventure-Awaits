@@ -1,10 +1,11 @@
+<body id={{ this.genre }}>
 <header>
     <div class="row">
         <div class="col s1">
             <button class="index science vampire adv btn mystery">Home</button>
         </div>
         <div class="col s11">
-            <h4 class="col s12 science vampire adv mystery" class={{this.genre}}>Genre</h4>
+            <h4 class="col s12 science vampire adv mystery {{this.genre}}">{{ this.genre }}</h4>
         </div>
     </div>
     </header>
@@ -51,3 +52,11 @@
   </div>
 </div>
 </main>
+<footer class="page-footer transparent">
+            <div class="row bottom">
+                <div class="col l12 s12">
+                    <p class="white-text">Copyright &copy; <span id="date"></span> Ross Blair. Michael Malley. Matt Sullivan. Melissa Webb. University of New Hampshire.</p>
+                </div>
+            </div>
+    </footer>
+</body>
