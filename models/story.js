@@ -1,7 +1,7 @@
-'use strict'
+"use strict";
 
-module.exports = function(sequelize, DataTypes) {
-  const Story = sequelize.define('Story', {
+module.exports = function (sequelize, DataTypes) {
+  var Story = sequelize.define("Story", {
     story_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -16,15 +16,14 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     }
-  }, {
-    classMethods: {
-      associate: function(models) {
-        Story.hasMany(models.Page, {
-          onDelete: "cascade"
-        });
-      }
-    }
   });
+
+  Story.associate = function (models) {
+    Story.hasMany(models.Page, {
+      onDelete: "cascade",
+      foreignKey: "story_id"
+    });
+  };
 
   return Story;
 };

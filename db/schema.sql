@@ -1,4 +1,4 @@
-CREATE SCHEMA adventure_awaits_db ;
+CREATE DATABASE adventure_awaits_db;
 USE adventure_awaits_db;
 
 CREATE TABLE story_table (

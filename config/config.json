@@ -2,7 +2,7 @@
   "development":
   {
     "username": "root",
-    "password": "passwordmysql",
+    "password": "23Lakepools",
     "database": "adventure_awaits_db",
     "host": "127.0.0.1",
     "dialect": "mysql"

@@ -1,7 +1,7 @@
-'use strict'
+"use strict";
 
-module.exports = function(sequelize, DataTypes) {
-  const Page = sequelize.define('Page', {
+module.exports = function (sequelize, DataTypes) {
+  var Page = sequelize.define("Page", {
     page_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -61,17 +61,13 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       defaultValue: 0
     }
-  }, {
-    classMethods: {
-      associate: function(models) {
-        Page.belongsTo(models.Story, {
-          foreignKey: {
-            allowNull: false
-          }
-        });
-      }
-    }
   });
+
+  Page.associate = function (models) {
+    Page.belongsTo(models.Story, {
+      foreignKey: "id_story"
+    });
+  };
 
   return Page;
 };
