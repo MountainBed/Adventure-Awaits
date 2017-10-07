@@ -1,0 +1,178 @@
+body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+     background-image: url("../images/background2.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     font-family: "Arial", sans-serif;
+}
+
+main {
+     flex: 1 0 auto;
+}
+
+/*Styles for index*/
+.container {
+     max-width: 400px;
+}
+
+button {
+     background-color: transparent;
+     background-repeat: no-repeat;
+     border: none;
+     cursor: pointer;
+     overflow: hidden;
+     outline: none;
+}
+
+.index {
+     background-color: #361E1C;
+     color: #fff;
+}
+
+.index:hover {
+     background-color: #fff;
+     color: #361E1C;
+}
+
+.instruct {
+     color: #361E1C;
+     font-size: 16px;
+     font-weight: bold;
+     max-width: 400px;
+     margin-top: -5px;
+}
+
+.images {
+     width: 210px;
+     padding: 0px;
+}
+
+h4 {
+     text-align: center;
+     color: #1b5e20;
+     font-family: 'Chewy', cursive;
+     font-size: 50px;
+}
+
+.bottom {
+     margin-bottom: 0px;
+     height: 155px;
+}
+
+/*Styles for form & story*/
+.choice {
+     text-align: center;
+}
+
+/*SciFi Styles*/
+body {
+     background-image: url("../images/backgroundSciFi.jpg");
+}
+
+h4.science {
+     font-family: "Audiowide", cursive;
+}
+
+.science {
+     color: #fff;
+}
+
+button.science {
+     background: #1a237e;
+     color: #fff;
+}
+
+/*Vampire Styles*/
+body {
+     background-image: url("../images/backgroundVampire.jpg");
+}
+
+h4.vampire {
+     font-family: "Nosifer", cursive;
+     color: black;
+}
+
+.vampire {
+     color: #fff;
+}
+
+button.vampire {
+     background: black;
+     color: #fff;
+}
+
+button.vampire:hover {
+     background: white;
+     color: black;
+     font-weight: bold;
+}
+
+/*Adventure Styles*/
+body {
+     background-image: url("../images/backgroundAdv.jpg");
+}
+
+h4.adv {
+     font-family: "Titan One", cursive;
+     color: #4a148c;
+}
+
+.adv {
+     color: #451D3F;
+}
+
+button.adv {
+     background: #4a148c;
+     color: #fff;
+}
+
+button.adv:hover {
+     background: white;
+     color: #4a148c;
+     font-weight: bold;
+}
+
+/*Mystery Styles*/
+body {
+     background-image: url("../images/backgroundMystery.jpg");
+}
+
+h4.mystery {
+     font-family: "Averia Libre", cursive;
+     color: #fff;
+}
+
+.mystery {
+     color: #fff;
+}
+
+.choice {
+     color: #fff;
+}
+
+button.mystery {
+     background: #fff;
+     color: #000;
+}
+
+button.mystery:hover {
+     background: #000;
+     color: #fff;
+     font-weight: bold;
+}
+
+/*Footer Styles*/
+.footerHeight {
+     margin-bottom: 0px;
+}
+
+footer {
+     text-align: center;
+     padding: 0px;
+     height: 20px;
+     margin-bottom: 0px;
+}
