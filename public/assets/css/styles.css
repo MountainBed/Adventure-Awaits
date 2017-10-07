@@ -69,7 +69,7 @@ h4 {
 }
 
 /*SciFi Styles*/
-body {
+/*body {
      background-image: url("../images/backgroundSciFi.jpg");
 }
 
@@ -84,10 +84,10 @@ h4.science {
 button.science {
      background: #1a237e;
      color: #fff;
-}
+}*/
 
 /*Vampire Styles*/
-body {
+/*body {
      background-image: url("../images/backgroundVampire.jpg");
 }
 
@@ -109,10 +109,10 @@ button.vampire:hover {
      background: white;
      color: black;
      font-weight: bold;
-}
+}*/
 
 /*Adventure Styles*/
-body {
+/*body {
      background-image: url("../images/backgroundAdv.jpg");
 }
 
@@ -137,7 +137,7 @@ button.adv:hover {
 }
 
 /*Mystery Styles*/
-body {
+/*body {
      background-image: url("../images/backgroundMystery.jpg");
 }
 
@@ -163,7 +163,7 @@ button.mystery:hover {
      background: #000;
      color: #fff;
      font-weight: bold;
-}
+}*/
 
 /*Footer Styles*/
 .footerHeight {

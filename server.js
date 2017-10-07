@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var handlebars = require("express-handlebars");
+var path = require("path");
 
 var app = express();
 var PORT = process.env.PORT || 8080;
@@ -19,6 +20,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 
 require("./routes/story-api-routes.js")(app);
 require("./routes/page-api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 db.sequelize.sync({ force: false }).then(function () {
   app.listen(PORT, function () {
