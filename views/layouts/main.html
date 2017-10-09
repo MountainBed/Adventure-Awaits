@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" type="image/png" href="../../public/assets/images/logo.png">
+    <title>Adventure Awaits!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--JavaScript-->
+    <script src="../../public/assets/js/jquery.js"></script>
+    <script src="../../public/assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="../../public/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Libre" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    <div class="row">
+        <div class="col s1">
+            <button class="index science vampire adv btn mystery">Home</button>
+        </div>
+        <div class="col s11">
+            <h4 class="col s12 science vampire adv mystery" class={{this.genre}}>Genre</h4>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="container">
+<div class="row">
+  <div class="col s12">
+    <p class="instruct science vampire adv mystery">Now that you've decided which direction our hero should go, use the space below to continue the adventure...</p>
+  </div>
+</div>
+
+<div class="row">
+    <form action="/genre" method="POST" class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="story" class="materialize-textarea instruct science vampire adv mystery" data-length="4000"></textarea>
+        </div>
+      </div>
+    </form>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <p class="instruct science vampire adv mystery">Before you leave, create two choices for our hero to choose from. Choices could include which direction to go in, which door to go through, or which magic potion to drink...it's up to you! Make them good, though, because the next adventurer will continue the story from here!</p>
+  </div>
+<div class="row">
+  <div class="col s5">
+      <p class="instruct choice science vampire adv mystery">Choice 1:</p>
+          <div class="input-field inline">
+            <input id="choice1" type="text" class="validate science vampire adv mystery" required>
+          </div>
+  </div>
+  <div class="col s5 offset-2">
+      <p class="instruct choice science vampire adv mystery">Choice 2:</p>
+          <div class="input-field inline">
+            <input id="choice2" type="text" class="validate instruct science vampire adv mystery" required>
+          </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <button class="btn index science vampire adv mystery" type="submit">Submit</button>
+  </div>
+</div>
+</main>
+    <footer class="page-footer transparent">
+        <div class="row footerHeight">
+            <div class="col l12 s12">
+                <p class="white-text">Copyright &copy; <span id="date"></span> Ross Blair. Michael Malley. Matt Sullivan. Melissa Webb. Built for UNH Coding Bootcamp.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+var today = new Date();
+document.getElementById("date").textContent = today.getFullYear();
+</script>
+
+</html>
