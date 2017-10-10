@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var Page = sequelize.define("Page", {
     page_id: {
       type: DataTypes.INTEGER,
@@ -59,7 +59,7 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  Page.associate = function(models) {
+  Page.associate = function (models) {
     Page.belongsTo(models.Story, {
       foreignKey: "story_id"
     });

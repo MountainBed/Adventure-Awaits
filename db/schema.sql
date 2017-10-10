@@ -11,7 +11,6 @@ CREATE TABLE story_table (
   
 CREATE TABLE page_tables (
   page_id INT NOT NULL AUTO_INCREMENT,
-/*  page_title VARCHAR(45) NOT NULL,*/
   page_text VARCHAR(4000) NOT NULL,
   page_choice1 INT NOT NULL DEFAULT 0,
   page_choice_text1 VARCHAR(45) NOT NULL,

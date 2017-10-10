@@ -10,171 +10,160 @@
      background-position: center;
      background-size: cover;
      font-family: "Arial", sans-serif;
- }
+}
 
- main {
+main {
      flex: 1 0 auto;
- }
+}
 
- /*Styles for index*/
- .container {
-     max-width: 400px;
- }
+.main-box {
+     border: 2px solid black;
+     background-color: white;
+}
 
- button {
+/*Styles for index*/
+.index-container {
+     max-width:300px;
+}
+
+button {
      background-color: transparent;
      background-repeat: no-repeat;
      border: none;
      cursor: pointer;
      overflow: hidden;
      outline: none;
- }
+}
 
- .index {
+.index {
      background-color: #361E1C;
      color: #fff;
- }
+}
 
- .index:hover {
+.index:hover {
      background-color: #fff;
      color: #361E1C;
- }
+}
 
- .instruct {
+.instruct {
      color: #361E1C;
      font-size: 16px;
      font-weight: bold;
      max-width: 400px;
      margin-top: -5px;
- }
+}
 
- .images {
+.images {
      width: 210px;
      padding: 0px;
- }
+}
 
 h4 {
      text-align: center;
      color: #1b5e20;
      font-family: 'Chewy', cursive;
      font-size: 50px;
- }
+}
 
- .bottom {
+.bottom {
      margin-bottom: 0px;
      height: 155px;
- }
+}
 
- /*Styles for form & story*/
- .choice {
+/*Styles for form & story*/
+.choice {
      text-align: center;
- }
+}
 
- /*SciFi Styles*/
-#Sci-Fi {
+/*SciFi Styles*/
+.Sci-Fi {
      background-image: url("../images/backgroundSciFi.jpg");
- }
+     color: midnightblue;
+}
 
-#Sci-Fi h4 .science {
+.Sci-Fi a {
      font-family: "Audiowide", cursive;
- }
+}
 
-#Sci-Fi .science {
-     color: #fff;
- }
-
-#Sci-Fi button .science {
+.Sci-Fi-button {
      background: #1a237e;
      color: #fff;
- }
+}
 
- /*Vampire Styles*/
-#vampire .vampire-body {
+/*Vampire Styles*/
+.Vampires {
      background-image: url("../images/backgroundVampire.jpg");
- }
+     color: darkorange;
+}
 
-#vampire h4 .vampire {
+.Vampires a {
      font-family: "Nosifer", cursive;
      color: black;
- }
+}
 
-#vampire .vampire {
-     color: #fff;
- }
-
-#vampire button .vampire {
+.Vampires-button {
      background: black;
-     color: #fff;
- }
+     color: white;
+}
 
-#vampire button .vampire:hover {
+.Vampires-button:hover {
      background: white;
      color: black;
      font-weight: bold;
- }
+}
 
- /*Adventure Styles*/
-#adv body {
+/*Adventure Styles*/
+.Adventure {
      background-image: url("../images/backgroundAdv.jpg");
- }
+     color: #4a148c;
+}
 
-#adv h4.adv {
+.Adventure a {
      font-family: "Titan One", cursive;
      color: #4a148c;
- }
+}
 
-#adv .adv {
-     color: #451D3F;
- }
-
-#adv button .adv {
+.Adventure-button {
      background: #4a148c;
      color: #fff;
- }
+}
 
-#adv button.adv:hover {
+.Adventure-button:hover {
      background: white;
      color: #4a148c;
      font-weight: bold;
- }
+}
 
- /*Mystery Styles*/
-#mystery body {
+/*Mystery Styles*/
+.Mystery {
      background-image: url("../images/backgroundMystery.jpg");
- }
+     color: black;
+}
 
-#mystery h4 .mystery {
+.Mystery a {
      font-family: "Averia Libre", cursive;
-     color: #fff;
- }
+     color: white;
+}
 
-#mystery .mystery {
-     color: #fff;
- }
-
-#mystery .choice {
-     color: #fff;
- }
-
-#mystery button .mystery {
-     background: #fff;
+.Mystery-button {
+     background: sienna;
      color: #000;
- }
+}
 
-#mystery button.mystery:hover {
+.Mystery-button:hover {
      background: #000;
-     color: #fff;
+     color: #ffffff;
      font-weight: bold;
- }
+}
 
 /*Footer Styles*/
- .footerHeight {
+.footerHeight {
      margin-bottom: 0px;
- }
+}
 
- footer {
+footer {
      text-align: center;
      padding: 0px;
      height: 20px;
      margin-bottom: 0px;
- }
+}
