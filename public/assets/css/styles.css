@@ -1,6 +1,4 @@
- /* Styles for Project 2*/
-
- body {
+body {
      display: flex;
      min-height: 100vh;
      flex-direction: column;
@@ -19,6 +17,12 @@ main {
 .main-box {
      border: 2px solid black;
      background-color: white;
+}
+
+.formfield {
+     border: 2px solid black;
+     background-color: white;
+     padding: 20px;   
 }
 
 /*Styles for index*/
@@ -49,8 +53,6 @@ button {
      color: #361E1C;
      font-size: 16px;
      font-weight: bold;
-     max-width: 400px;
-     margin-top: -5px;
 }
 
 .images {

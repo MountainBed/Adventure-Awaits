@@ -4,6 +4,7 @@ var exphbs = require("express-handlebars");
 var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 8080;
+var bot = require("./slackbot/johnsteinbot.js");
 
 var db = require("./models");
 
@@ -23,6 +24,7 @@ require("./routes/page-api-routes.js")(app);
 
 db.sequelize.sync({ force: false }).then(function () {
   app.listen(PORT, function () {
+    bot.botListen();
     console.log("App listening on PORT " + PORT);
   });
 });
