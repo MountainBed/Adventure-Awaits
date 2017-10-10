@@ -75,7 +75,7 @@ module.exports = function (app) {
         newPage.story_id = 4;
         break;
     }
-    bot.botUpdate(req.params.genre);
+
     db.Page.create(newPage).then(function (dbPage) {
       console.log(dbPage);
       res.redirect("/page/" + dbPage.page_id);
